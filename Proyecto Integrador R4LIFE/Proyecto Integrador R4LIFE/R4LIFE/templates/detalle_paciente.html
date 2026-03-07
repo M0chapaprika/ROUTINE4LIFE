@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Personales del Paciente</title>
+</head>
+<body>
+
+    <header>
+        <h2>ROUTINE4LIFE</h2>
+        <nav>
+            <a href="#">Inicio</a> |
+            <a href="#">Médicos</a> |
+            <a href="#">Pacientes</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h1>DATOS PERSONALES DEL PACIENTE</h1>
+
+    <form>
+
+        <h3>Información General</h3>
+
+        <label for="nombre">Nombre del paciente:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="genero">Género:</label><br>
+        <select id="genero" name="genero">
+            <option value="">Seleccione</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br><br>
+
+        <label for="curp">CURP:</label><br>
+        <input type="text" id="curp" name="curp"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion" name="direccion"><br><br>
+
+        <button type="submit">Aceptar</button>
+        <button type="reset">Cancelar</button>
+        <button type="button">Siguiente</button>
+
+    </form>
+
+</body>
+</html>
