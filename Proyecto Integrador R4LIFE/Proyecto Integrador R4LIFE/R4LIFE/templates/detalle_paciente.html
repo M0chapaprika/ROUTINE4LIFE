@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Datos Personales del Paciente</title>
+    <link rel="stylesheet" href="/static/detalle_paciente.css">
 </head>
 <body>
 
-    <header>
-        <h2>ROUTINE4LIFE</h2>
-        <nav>
-            <a href="#">Inicio</a> |
-            <a href="#">Médicos</a> |
-            <a href="#">Pacientes</a>
-        </nav>
-    </header>
+    <div class="detalle_paciente_container">
+        
+        <header>
+            <h2>ROUTINE4LIFE</h2>
+            <nav>
+                <a href="#">Inicio</a> |
+                <a href="#">Médicos</a> |
+                <a href="#">Pacientes</a>
+            </nav>
+        </header>
 
-    <hr>
+        <hr>
 
-    <h1>DATOS PERSONALES DEL PACIENTE</h1>
+        <h1 class="detalle_paciente_titulo">DATOS PERSONALES DEL PACIENTE</h1>
 
-    <form>
+        <form>
+            <div class="detalle_paciente_fila">
+                <!-- Columna izquierda -->
+                <div class="detalle_paciente_columna">
+                    <div class="detalle_paciente_campo">
+                        <label for="nombre">Nombre del paciente:</label>
+                        <input type="text" id="nombre" name="nombre" value="Jorge Luis Guevara Mattar" readonly>
+                    </div>
 
-        <h3>Información General</h3>
+                    <div class="detalle_paciente_campo">
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="text" id="fecha" name="fecha" value="31/08/2006" readonly>
+                    </div>
 
-        <label for="nombre">Nombre del paciente:</label><br>
-        <input type="text" id="nombre" name="nombre"><br><br>
+                    <div class="detalle_paciente_campo">
+                        <label for="curp">CURP:</label>
+                        <input type="text" id="curp" name="curp" value="1127384300" readonly>
+                    </div>
 
-        <label for="fecha">Fecha de nacimiento:</label><br>
-        <input type="date" id="fecha" name="fecha"><br><br>
+                    <div class="detalle_paciente_campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" value="14jorgeguevara32@gmail.com" readonly>
+                    </div>
+                </div>
 
-        <label for="genero">Género:</label><br>
-        <select id="genero" name="genero">
-            <option value="">Seleccione</option>
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-        </select><br><br>
+                <!-- Columna derecha -->
+                <div class="detalle_paciente_columna">
+                    <div class="detalle_paciente_campo">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino" selected>Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </div>
 
-        <label for="curp">CURP:</label><br>
-        <input type="text" id="curp" name="curp"><br><br>
+                    <div class="detalle_paciente_campo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" value="+57 322 4588118" readonly>
+                    </div>
 
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono"><br><br>
+                    <div class="detalle_paciente_campo">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" value="Cra 28, 42 - 24" readonly>
+                    </div>
+                </div>
+            </div>
 
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="email" id="correo" name="correo"><br><br>
-
-        <label for="direccion">Dirección:</label><br>
-        <input type="text" id="direccion" name="direccion"><br><br>
-
-        <button type="submit">Aceptar</button>
-        <button type="reset">Cancelar</button>
-        <button type="button">Siguiente</button>
-
-    </form>
+            <div class="detalle_paciente_botones">
+                <button type="submit">Aceptar</button>
+                <button type="reset">Cancelar</button>
+                <button type="button">Siguiente</button>
+            </div>
+        </form>
+    </div>
 
 </body>
 </html>
